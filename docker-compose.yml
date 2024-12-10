@@ -66,9 +66,10 @@ services:
       #- SESSION_LIFETIME=120
       #- QUEUE_CONNECTION=sync
       #- SECURITY_HEADER_HSTS_ENABLE=false
-      - SECURITY_HEADER_CSP_CONNECT_SRC="self; http:; https:"
-      - SECURITY_HEADER_SCRIPT_SRC_ALLOW="self; unsafe-inline; unsafe-eval; http:; https:"
-      - SECURITY_HEADER_STYLE_SRC="self; unsafe-inline; http:; https:"
+      - SECURITY_HEADER_CSP_CONNECT_SRC='self'
+      - SECURITY_HEADER_SCRIPT_SRC_ALLOW='self'
+      - SECURITY_HEADER_STYLE_SRC='self'
+      - SECURITY_HEADER_IMG_SRC='self data: blob:'
       #- SESSION_SECURE_COOKIE=false
       #- MAIL_DRIVER=smtp
       #- MAIL_HOST=smtp.mailtrap.io
